@@ -18,5 +18,5 @@ public class Variable {
         System.out.println(wifi);
         System.out.println(ssd);
         System.out.print(fan);
-        }
     }
+}
