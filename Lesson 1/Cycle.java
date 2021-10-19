@@ -13,19 +13,19 @@ public class Cycle {
         int i = 6;
         while(i >= -6) {
             System.out.println(i);
-            i-=2;
+            i -=2;
         }
 
         System.out.println();
 
         int j = 10;
-        int sum = 0;
+        int sumOdd = 0;
         do {
             if(j % 2 == 1) {
-                sum += j;
+                sumOdd += j;
             }
             j++;
         } while(j <= 20);
-            System.out.println(sum);
+        System.out.println(sumOdd);
     }
 }
