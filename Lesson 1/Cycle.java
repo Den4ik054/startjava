@@ -22,7 +22,7 @@ public class Cycle {
         int sum = 0;
         do {
             if(j % 2 == 1) {
-                sum = sum + j;
+                sum += j;
             }
             j++;
         } while(j <= 20);
