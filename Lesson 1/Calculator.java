@@ -14,27 +14,27 @@ public class Calculator {
         int secondNumber = 6;
         System.out.println("Введите второе число " + secondNumber);
 
-        char operation = '/';
+        char operation = '+';
         System.out.println("Введите необходимую операцию " + operation);
 
         int degree = firstNumber;
         if(operation == '^' && (firstNumber > 0 && secondNumber > 0)) {
             for (int i = 1; i < secondNumber; i++) {
                 degree *= firstNumber;
-        }
-            System.out.println("Результат = " + temp);
+            }
+            System.out.println("Результат = " + degree);
         } else if(operation == '%') {
             System.out.println("Результат = " + (firstNumber % secondNumber));
         } else if(operation == '+' && (firstNumber >= 0 && secondNumber >= 0)) {
             System.out.println("Результат = " + (firstNumber + secondNumber));
         } else if(operation == '*' && (firstNumber >= 0 && secondNumber >= 0)) {
             System.out.println("Результат = " + (firstNumber * secondNumber));
-        } else if(operation == '/' &&  secondNumber == 0) {
+        } if(operation == '/' && secondNumber == 0) {
             System.out.println("На ноль делить нельзя");
-        } else if(operation == '/') {
+        } else {
             System.out.println("Результат = " + (firstNumber / secondNumber));
-        } else if(operation == '-') {
+        }if(operation == '-') {
             System.out.println("Результат = " + (firstNumber - secondNumber));
-            }
+        }
     }
 }
