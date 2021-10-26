@@ -8,33 +8,37 @@
 // Считайте остаток от деления
 public class Calculator {
     public static void main(String[] args) {
-        int firstNumber = 12;
+        int firstNumber =12;
         System.out.println("Введите первое число " + firstNumber);
 
-        int secondNumber = 6;
+        int secondNumber = 0;
         System.out.println("Введите второе число " + secondNumber);
 
-        char operation = '+';
+        char operation = '/';
         System.out.println("Введите необходимую операцию " + operation);
 
         int degree = firstNumber;
-        if(operation == '^' && (firstNumber > 0 && secondNumber > 0)) {
-            for (int i = 1; i < secondNumber; i++) {
+        if((firstNumber > 0) && (secondNumber >= 0)) {
+            if(operation == '^') {
+                for(int i = 1; i < secondNumber; i++) {
                 degree *= firstNumber;
+                }
+                System.out.println("Результат = " + degree);
+            } if(operation == '%') {
+                System.out.println("Результат = " + (firstNumber % secondNumber));
+            } if(operation == '+') {
+                System.out.println("Результат = " + (firstNumber + secondNumber));
+            } if(operation == '*') {
+                System.out.println("Результат = " + (firstNumber * secondNumber));
+            } if(operation == '-') {
+                System.out.println("Результат = " + (firstNumber - secondNumber));
+            } if(operation == '/') {
+                if(secondNumber == 0) {
+                    System.out.println("На ноль делить нельзя");
+                } else {
+                    System.out.println("Результат = " + (firstNumber / secondNumber));
+                }
             }
-            System.out.println("Результат = " + degree);
-        } else if(operation == '%') {
-            System.out.println("Результат = " + (firstNumber % secondNumber));
-        } else if(operation == '+' && (firstNumber >= 0 && secondNumber >= 0)) {
-            System.out.println("Результат = " + (firstNumber + secondNumber));
-        } else if(operation == '*' && (firstNumber >= 0 && secondNumber >= 0)) {
-            System.out.println("Результат = " + (firstNumber * secondNumber));
-        } if(operation == '/' && secondNumber == 0) {
-            System.out.println("На ноль делить нельзя");
-        } else {
-            System.out.println("Результат = " + (firstNumber / secondNumber));
-        }if(operation == '-') {
-            System.out.println("Результат = " + (firstNumber - secondNumber));
         }
     }
 }
