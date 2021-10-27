@@ -8,7 +8,7 @@
 // Считайте остаток от деления
 public class Calculator {
     public static void main(String[] args) {
-        int firstNumber =12;
+        int firstNumber = 12;
         System.out.println("Введите первое число " + firstNumber);
 
         int secondNumber = 0;
@@ -21,7 +21,7 @@ public class Calculator {
         if((firstNumber > 0) && (secondNumber >= 0)) {
             if(operation == '^') {
                 for(int i = 1; i < secondNumber; i++) {
-                degree *= firstNumber;
+                    degree *= firstNumber;
                 }
                 System.out.println("Результат = " + degree);
             } if(operation == '%') {
