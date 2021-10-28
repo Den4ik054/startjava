@@ -26,13 +26,13 @@ public class Calculator {
                 System.out.println("Результат = " + degree);
             } if(operation == '%') {
                 System.out.println("Результат = " + (firstNumber % secondNumber));
-            } if(operation == '+') {
+            } else if(operation == '+') {
                 System.out.println("Результат = " + (firstNumber + secondNumber));
-            } if(operation == '*') {
+            } else if(operation == '*') {
                 System.out.println("Результат = " + (firstNumber * secondNumber));
-            } if(operation == '-') {
+            } else if(operation == '-') {
                 System.out.println("Результат = " + (firstNumber - secondNumber));
-            } if(operation == '/') {
+            } else if(operation == '/') {
                 if(secondNumber == 0) {
                     System.out.println("На ноль делить нельзя");
                 } else {

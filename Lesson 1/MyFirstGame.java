@@ -16,13 +16,13 @@ public class MyFirstGame {
             do {
                 if(numberUser > numberPC) {
                     System.out.println("Данное число больше того, что загадал компьютер");
-                    numberUser --;
+                    numberUser--;
                 } else {
                     System.out.println("Данное число меньше того, что загадал компьютер");
-                    numberUser ++;
+                    numberUser++;
                 }
             } while (numberUser != numberPC);
-        System.out.println("Поздравляю, число угадано!");
+            System.out.println("Поздравляю, число угадано!");
         }
     }
 }
