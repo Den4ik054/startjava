@@ -3,24 +3,27 @@
 // в этом же классе присвойте полям Wolf какие-то значения
 // получите эти значения из полей и отобразите в консоли
 // вызовите методы объекта
+
+// с помощью сеттеров присвойте полям экземпляра класса Wolf какие-то значения
+// считайте эти значения из полей с помощью геттеров и отобразите в консоли
 public class WolfTest {
     public static void main(String[] args) {
         Wolf wolfOne = new Wolf();
-        wolfOne.floor = new String("man");
-        wolfOne.nickname = new String("sharik");
-        wolfOne.weight = 6.5f;
-        wolfOne.age = 3;
-        wolfOne.colour = new String("gray");
+        wolfOne.setFloor("man");
+        wolfOne.setNickName("sharik");
+        wolfOne.setWeight(6.5f);
+        wolfOne.setAge(4);
+        wolfOne.setColour("gray");
 
-        System.out.println("Пол - " + wolfOne.floor);
-        System.out.println("Кличка - " + wolfOne.nickname);
-        System.out.println("Вес - " + wolfOne.weight);
-        System.out.println("Возраст - " + wolfOne.age);
-        System.out.println("Окрас - " + wolfOne.colour);
-        wolfOne.move();
-        wolfOne.sit();
-        wolfOne.run();
-        wolfOne.howl();
-        wolfOne.hunt();
+        System.out.println("Пол - " + wolfOne.getFloor());
+        System.out.println("Кличка - " + wolfOne.getNickName());
+        System.out.println("Вес - " + wolfOne.getWeight());
+        System.out.println("Возраст - " + wolfOne.getAge());
+        System.out.println("Окрас - " + wolfOne.getColour());
+        // wolfOne.move();
+        // wolfOne.sit();
+        // wolfOne.run();
+        // wolfOne.howl();
+        // wolfOne.hunt();
     }
 }
