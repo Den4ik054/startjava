@@ -9,11 +9,22 @@ public class Jaeger {
     private int strenght;
     private int armor;
 
+    public Jaeger(String modelName, String mark, String origin, float height, float weight, int speed, int strenght, int armor) {
+        this.modelName = modelName;
+        this.mark = mark;
+        this.origin = origin;
+        this.height = height;
+        this.weight = weight;
+        this.speed = speed;
+        this.strenght = strenght;
+        this.armor = armor;
+    }
+
     public String getModelName() {
         return modelName;
     }
 
-    void setModelName(String modelName) {
+    public void setModelName(String modelName) {
         this.modelName = modelName;
     }
 
@@ -21,7 +32,7 @@ public class Jaeger {
         return mark;
     }
 
-    void setMark(String mark) {
+    public void setMark(String mark) {
         this.mark = mark;
     }
 
@@ -29,7 +40,7 @@ public class Jaeger {
         return origin;
     }
 
-    void setOrigin(String origin) {
+    public void setOrigin(String origin) {
         this.origin = origin;
     }
 
@@ -37,8 +48,8 @@ public class Jaeger {
         return height;
     }
 
-    void setHeight(Float height) {
-        if(height <= 0) {
+    public void setHeight(Float height) {
+        if(this.height <= 0) {
             System.out.println("Не верный рост");
         } else {
         this.height = height;
@@ -49,8 +60,8 @@ public class Jaeger {
         return weight;
     }
 
-    void setWeight(Float weight) {
-        if(weight <= 0) {
+    public void setWeight(Float weight) {
+        if(this.weight <= 0) {
             System.out.println("Не верная масса");
         } else {
         this.weight = weight;
@@ -61,7 +72,7 @@ public class Jaeger {
         return speed;
     }
 
-    void setSpeed(int speed) {
+    public void setSpeed(int speed) {
         if (speed > 120) {
             System.out.println("Быстрее не могу ");
         } else {
@@ -73,7 +84,7 @@ public class Jaeger {
         return strenght;
     }
 
-    void setStrenght(int strenght) {
+    public void setStrenght(int strenght) {
         if (strenght <= 0) {
             System.out.println("Нужен еще шпинат ");
         } else {
@@ -85,11 +96,11 @@ public class Jaeger {
         return armor;
     }
 
-    void setArmor(int armor) {
-        if(armor <= 0) {
+    public void setArmor(int armor) {
+        if(this.armor > 0)
+        this.armor = armor;
+        else {
             System.out.println("Я уязвим ");
-        } else {
-            this.armor = armor;
         }
     }
 
