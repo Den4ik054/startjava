@@ -44,27 +44,27 @@ public class Jaeger {
         this.origin = origin;
     }
 
-    public Float getHeight() {
+    public float getHeight() {
         return height;
     }
 
-    public void setHeight(Float height) {
-        if(this.height <= 0) {
+    public void setHeight(float height) {
+        if(height <= 0) {
             System.out.println("Не верный рост");
         } else {
-        this.height = height;
+            this.height = height;
         }
     }
 
-    public Float getWeight() {
+    public float getWeight() {
         return weight;
     }
 
-    public void setWeight(Float weight) {
-        if(this.weight <= 0) {
+    public void setWeight(float weight) {
+        if(weight <= 0) {
             System.out.println("Не верная масса");
         } else {
-        this.weight = weight;
+            this.weight = weight;
         }
     }
 
@@ -97,7 +97,7 @@ public class Jaeger {
     }
 
     public void setArmor(int armor) {
-        if(this.armor > 0)
+        if(armor > 0)
         this.armor = armor;
         else {
             System.out.println("Я уязвим ");

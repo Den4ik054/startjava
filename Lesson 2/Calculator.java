@@ -24,29 +24,29 @@ public class Calculator {
     }
 
     public void calculate() {
-        int degree = firstNumber;
         switch(operation) {
-        case '^' :
-            for(int i = 1; i < secondNumber; i++) {
-                degree *= firstNumber;
-            }
-            System.out.println("Результат = " + degree);
-            break;
-        case '+' :
-            System.out.println("Результат = " + (firstNumber + secondNumber));
-            break;
-        case '-' :
-            System.out.println("Результат = " + (firstNumber - secondNumber));
-            break;
-        case '*' :
-            System.out.println("Результат = " + (firstNumber * secondNumber));
-            break;
-        case '/' :
-            System.out.println("Результат = " + (firstNumber / secondNumber));
-            break;
-        case '%' :
-            System.out.println("Результат = " + (firstNumber % secondNumber));
-            break;
+            case '^' :
+                int degree = firstNumber;
+                for(int i = 1; i < secondNumber; i++) {
+                    degree *= firstNumber;
+                }
+                System.out.println("Результат = " + degree);
+                break;
+            case '+' :
+                System.out.println("Результат = " + (firstNumber + secondNumber));
+                break;
+            case '-' :
+                System.out.println("Результат = " + (firstNumber - secondNumber));
+                break;
+            case '*' :
+                System.out.println("Результат = " + (firstNumber * secondNumber));
+                break;
+            case '/' :
+                System.out.println("Результат = " + (firstNumber / secondNumber));
+                break;
+            case '%' :
+                System.out.println("Результат = " + (firstNumber % secondNumber));
+                break;
         }
     }
 }
