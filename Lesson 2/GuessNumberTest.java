@@ -4,7 +4,7 @@ public class GuessNumberTest {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int numberPC = (int) (Math.random() * 100);
-        System.out.println("Число игры: " + numberPC);
+        //System.out.println("Число игры: " + numberPC);
         GuessNumber game = new GuessNumber(numberPC);
 
         System.out.println("Введите имя первого игрока");
